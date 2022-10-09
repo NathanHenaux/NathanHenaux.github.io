@@ -1,4 +1,9 @@
 body {
+  background-image: url(../img/bg-img0.jpg);
+  background-size: cover;
+}
+
+body {
   font-family: "Uni Sans Demo", sans-serif;
   background-color: #363434;
   color: white;

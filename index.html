@@ -9,22 +9,27 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/scrollbar.css" />
+    <link rel="stylesheet" href="./assets/css/profileCard.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!--Background Image-->
+
+    <div class="bg-img0"></div>
+
     <!--NavBar (Responsive)-->
 
     <div class="sidebar">
       <div class="logo-details">
-        <i class="bx bxl-c-plus-plus icon"></i>
+        <i class="bx bx-terminal icon"></i>
         <div class="logo_name">Portefolio</div>
         <i class="bx bx-menu" id="btn"></i>
       </div>
       <ul class="nav-list">
-        <li>
+        <li onclick="profileCard()">
           <a href="#">
             <i class="bx bx-user"></i>
             <span class="links_name">Profile</span>
@@ -34,9 +39,9 @@
         <li>
           <a href="#">
             <i class="bx bx-pie-chart-alt-2"></i>
-            <span class="links_name">Skills</span>
+            <span class="links_name">Technology</span>
           </a>
-          <span class="tooltip">Skills</span>
+          <span class="tooltip">Technology</span>
         </li>
         <li>
           <a href="#">
@@ -45,13 +50,6 @@
           </a>
           <span class="tooltip">Project</span>
         </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-chat"></i>
-            <span class="links_name">Contact</span>
-          </a>
-          <span class="tooltip">Contact</span>
-        </li>
         <li class="profile">
           <div class="profile-details">
             <div class="name_job">
@@ -59,10 +57,67 @@
               <div class="job">Student</div>
             </div>
           </div>
-          <i class="bx bxs-user-circle" id="log_out"></i>
+          <i
+            class="bx bxs-user-circle"
+            id="profile"
+            onclick="profileCard()"
+          ></i>
         </li>
       </ul>
     </div>
+
+    <!--Profile Card-->
+
+    <div
+      style="display: none"
+      id="profileCard"
+      class="card-container home-section"
+    >
+      <img class="round" src="./assets/img/profile.jfif" alt="user" />
+      <h3>Nathan Henaux</h3>
+      <h6 style="font-size: 15px">Lille</h6>
+      <p>
+        Student<br />
+        Junior Web Developer <br />
+        Junior Game Developer
+      </p>
+      <div class="buttons">
+        <button href="#" class="primary">CV</button>
+      </div>
+      <div class="footerCard">
+        <h6>Skills</h6>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+        </ul>
+      </div>
+      <div style="margin-top: -30px" class="footerCardContact">
+        <h6>Contact</h6>
+        <ul>
+          <li>
+            <a style="color: grey" href="https://github.com/NathanHenaux"
+              ><i class="bx bxl-github iconContact"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              style="color: grey"
+              href="https://www.linkedin.com/in/nathan-henaux-427b11223/"
+              ><i class="bx bxl-linkedin-square iconContact"></i
+            ></a>
+          </li>
+          <li>
+            <a style="color: grey"
+              ><i class="bx bxl-discord iconContact"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Text Index-->
 
     <section class="home-section">
       <div class="container">

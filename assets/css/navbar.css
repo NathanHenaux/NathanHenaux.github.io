@@ -116,25 +116,6 @@
   display: none;
 }
 
-.sidebar input {
-  font-size: 15px;
-  color: #fff;
-  font-weight: 400;
-  outline: none;
-  height: 50px;
-  width: 100%;
-  width: 50px;
-  border: none;
-  border-radius: 12px;
-  transition: all 0.5s ease;
-  background: #121317;
-}
-
-.sidebar.open input {
-  padding: 0 20px 0 50px;
-  width: 100%;
-}
-
 .sidebar .bx-search {
   position: absolute;
   top: 50%;
@@ -240,7 +221,7 @@
   font-size: 12px;
 }
 
-.sidebar .profile #log_out {
+.sidebar .profile #profile {
   position: absolute;
   top: 50%;
   right: 0;
@@ -253,14 +234,13 @@
   transition: all 0.5s ease;
 }
 
-.sidebar.open .profile #log_out {
+.sidebar.open .profile #profile {
   width: 50px;
   background: none;
 }
 
 .home-section {
   position: relative;
-  min-height: 100vh;
   top: 0;
   left: 78px;
   width: calc(100% - 78px);
@@ -270,7 +250,6 @@
 
 .sidebar.open ~ .home-section {
   left: 250px;
-  width: calc(100% - 250px);
 }
 
 .home-section .text {
